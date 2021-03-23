@@ -22,7 +22,7 @@
                                     <td>{{ $story->title }}</td>
                                     <td>{{ $story->type }}</td>
                                     <td>{{ $story->status ? 'Yes' : 'No'}}</td>
-                                    <td>&nbsp;</td>
+                                    <td><a href="{{ route('stories.show', [$story->id]) }}" class="btn btn-secondary btn-sm">View</a></td>
                                 </tr>
                             @endforeach
                             </tbody>
